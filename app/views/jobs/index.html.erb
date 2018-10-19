@@ -1,0 +1,8 @@
+<h1>My Jobs List</h1>
+<% @company_jobs.each do |company_job| %>
+  <ul>
+    <li>  <%= link_to company_job.title, job_path(company_job.id) %></li>
+    <li> Applied by - <%= "#{company_job.get_job_applicant(company_job)}" %> </li>
+  </ul>
+<% end %>
+</table>

@@ -19,6 +19,7 @@ gem 'bootstrap-sass',          '3.3.7'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
+  gem 'pg', '~> 0.18'
   gem 'byebug',  '9.0.6', platform: :mri
 end
 
@@ -38,7 +39,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg',  '0.20.0'
+  gem 'pg', '~> 0.18'
   gem 'fog', '1.42'
 end
 
